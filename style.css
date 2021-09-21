@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("fonts/roboto/stylesheet.css");
 
 
 html {
@@ -56,4 +57,7 @@ footer {
 }
 .link:hover{
   text-decoration: none;
+}
+.cards {
+  font-family:cursive;
 }
