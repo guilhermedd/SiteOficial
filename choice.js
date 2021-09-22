@@ -1,9 +1,11 @@
-let codigoFinal = [];
+let codigoFinal = []
 
-function clicar(x) {
-  codigoFinal.push(x);
+function clicar(c) {
+    codigoFinal.push(c);
+    localStorage.setItem('codigoFinal', codigoFinal);
 }
 
-function codigo() {
-  console.log(codigoFinal);
+function pegarCodigoFinal() {
+  return localStorage.getItem('codigoFinal');
+  // console.log(localStorage.getItem('codigoFinal'));
 }
