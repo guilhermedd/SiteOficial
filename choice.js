@@ -1,4 +1,4 @@
-let codigoFinal = []
+let codigoFinal = ['a','b','c']
 
 function clicar(c) {
     codigoFinal.push(c);
@@ -6,6 +6,6 @@ function clicar(c) {
 }
 
 function pegarCodigoFinal() {
-  return localStorage.getItem('codigoFinal');
+  return localStorage.getItem('codigoFinal', codigoFinal);
   // console.log(localStorage.getItem('codigoFinal'));
 }
