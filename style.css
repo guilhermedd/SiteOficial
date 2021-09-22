@@ -63,10 +63,12 @@ footer {
 }
 .img {
   transition:transform 0.25s ease;
+  height: 350px;
+  /* width: 287px; */
 }
 
 .img:hover {
-  -webkit-transform:scale(1.5);
+  -webkit-transform:scale(1.3);
   transform:scale(1.5);
 }
 /* .pagination {
