@@ -76,7 +76,7 @@ footer {
 .img {
   transition:transform 0.25s ease;
   height: 350px;
-  /* width: 287px; */
+  width: 287px;
 }
 
 .img:hover {
