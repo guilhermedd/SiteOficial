@@ -20,7 +20,7 @@
 
   <title>MS Representações</title>
 </head>
-<body>
+<body onload="final()">
 
   <script src="choice.js"></script>
   <div class="buttonRet">
@@ -32,12 +32,17 @@
       O código do seu zíper é:
     </div>
   </section>
-  <section  style="margin: auto;" >
-    <div style="font-size: 25px;" onload="final()">
+  <section  style="margin: auto; margin-bottom: 0;" >
+    <div style="font-size: 70px;" onload="final()">
       <b id="Final">
       </b>
     </div>
   </section>
+
+  <div class="button" style="margin: auto;">
+    <a href="entryPage.html"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="zerar()">Voltar à página inicial</button>
+    </a>
+  </div>
 
   <footer>
     <div class="container">
