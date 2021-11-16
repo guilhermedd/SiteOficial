@@ -27,3 +27,9 @@ function pegarCodigoFinal() {
   }
 
 }
+
+function final() {
+  const final = document.getElementById('Final')
+  const codigo = JSON.parse(localStorage.getItem('codigoFinal'))
+  final.innerHTML = codigo.join('');
+}
