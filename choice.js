@@ -51,7 +51,7 @@ function final() {
   } else if (codigo[1] == 'N') {
     codigo.push('4')
   } else if (codigo[1] == 'A') {
-    codigo.push('')
+    codigo.push('4')
   } else if (codigo[1] == 'OV') {
     codigo.push('3')
   } else if (codigo[1] == 'PO') {
@@ -61,9 +61,9 @@ function final() {
   } else if (codigo[1] == 'CV') {
     codigo.push('8')
   } else if (codigo[1] == 'GB') {
-    codigo.push('')
+    codigo.push('5')
   } else if (codigo[1] == 'NB') {
-    codigo.push('')
+    codigo.push('4')
   }
   final.innerHTML = codigo.join('');
 }
