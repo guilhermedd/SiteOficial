@@ -43,6 +43,7 @@ div {
 ul {
   font-size: 20px;
   text-align: left; 
+  margin: auto;
 }
 li {
   font-size: 30px;
