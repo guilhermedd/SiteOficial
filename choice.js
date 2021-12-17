@@ -67,3 +67,38 @@ function final() {
   }
   final.innerHTML = codigo.join('');
 }
+
+function final2() {
+  const final = document.getElementById('Final')
+  const codigo = JSON.parse(localStorage.getItem('codigoFinal'))
+  if (codigo[4] == '5') {
+    codigo.push('5')
+  } else if (codigo[1] == '4') {
+    codigo.push('4')
+  } else if (codigo[1] == '1') {
+    codigo.push('1')
+  } else if (codigo[1] == '3') {
+    codigo.push('3')
+  } else if (codigo[1] == '6') {
+    codigo.push('6')
+  } else if (codigo[1] == '7') {
+    codigo.push('7')
+  } else if (codigo[1] == '8') {
+    codigo.push('8')
+  }
+  
+  final.innerHTML = codigo.join('');
+}
+
+
+function tirazero() {
+  let codigoFinal = pegarCodigoFinal();
+  codigoFinal[3] = 6;
+  localStorage.setItem('codigoFinal', JSON.stringify(codigoFinal));
+}
+
+function colocazero() {
+  let codigoFinal = pegarCodigoFinal();
+  codigoFinal[3] = 60;
+  localStorage.setItem('codigoFinal', JSON.stringify(codigoFinal));
+}
