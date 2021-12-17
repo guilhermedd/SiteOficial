@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../style.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -20,40 +20,28 @@
 
   <title>MS Representações</title>
 </head>
-<body onload="exclude_code_bug(4)">
+<body onload="final()">
 
   <script src="../choice.js"></script>
   <div class="buttonRet">
-    <a href="../modelo.html"><button type="button" class="btn btn-light" onclick="excluir()" style="box-shadow: 1px 1px 3px;">Voltar</button></a>
+    <a href="cursor2.html"><button type="button" class="btn btn-light" onclick="excluir()" style="box-shadow: 1px 1px 3px;">Voltar</button></a>
   </div>
 
   <section  style="margin: auto;" >
     <div style="font-size: 25px;">
-      O zíper será <strong>FIXO</strong> ou <strong>DESTACÁVEL</strong>?
+      O código do seu zíper é:
+    </div>
+  </section>
+  <section  style="margin: auto;" >
+    <div style="font-size: 70px;">
+      <b id="Final">
+      </b>
     </div>
   </section>
 
-  <div class="cards">
-    <div class="container">
-      <div class="row">
-        <div class="col-md">
-          <div class="card" style="width: 18rem; margin: auto; box-shadow: 1px 1px 3px;" onclick="clicar('1')">
-            <a href="grossuraP.html"><img class="img" src="../FixoOuDestacavel/fixoP.png" alt="Fixo." id="Sintetico"></a>
-            <div class="card-body">
-              <p class="card-text">Esmaltado na Cor do Zíper.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card" style="width: 18rem;margin: auto; box-shadow: 1px 1px 3px;">
-            <a href="grossuraP.html"><img class="img" src="../FixoOuDestacavel/destacavelP.png" alt="Destacável." id="Metalico" onclick="clicar('4')"></a>
-            <div class="card-body">
-              <p class="card-text">Niquelado.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="button" style="margin: auto;">
+    <a href="../entryPage.html"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="zerar()">Voltar à página inicial</button>
+    </a>
   </div>
 
   <footer>
@@ -68,9 +56,9 @@
           </ul>
         </div>
         <div class="col-sm">
-          <img src="../../background/footer/WhatsApp Image 2021-09-16 at 3.41.24 PM.jpeg" alt="#">
-          <img src="../../background/footer/logotipo sancris-.png" alt="Logo Sancris" style="height: 80px;">
-          <img src="../../background/footer/WhatsApp Image 2021-09-16 at 3.41.25 PM.jpeg" alt="#">
+          <img src="../background/footer/WhatsApp Image 2021-09-16 at 3.41.24 PM.jpeg" alt="#">
+          <img src="../background/footer/logotipo sancris-.png" alt="Logo Sancris" style="height: 80px;">
+          <img src="../background/footer/WhatsApp Image 2021-09-16 at 3.41.25 PM.jpeg" alt="#">
         </div>
       </div>
     </div>

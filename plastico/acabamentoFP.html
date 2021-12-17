@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="../../style.css">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link href = "fonts/roboto/stylesheet.css" rel = "stylesheet" type = "text/css" />
-
   <title>MS Representações</title>
 </head>
-<body onload="exclude_code_bug(4)">
 
+<body onload="exclude_code_bug(4)">
   <script src="../choice.js"></script>
+
   <div class="buttonRet">
-    <a href="../modelo.html"><button type="button" class="btn btn-light" onclick="excluir()" style="box-shadow: 1px 1px 3px;">Voltar</button></a>
+    <a href="cursorFP.html"><button type="button" class="btn btn-light" onclick="excluir()" style="box-shadow: 1px 1px 3px;">Voltar</button></a>
   </div>
 
-  <section  style="margin: auto;" >
+  <section style="margin-bottom: 50px;">
     <div style="font-size: 25px;">
-      O zíper será <strong>FIXO</strong> ou <strong>DESTACÁVEL</strong>?
+      Escolha o <strong>ACABAMENTO</strong> do zíper:
     </div>
   </section>
 
@@ -37,21 +39,30 @@
     <div class="container">
       <div class="row">
         <div class="col-md">
-          <div class="card" style="width: 18rem; margin: auto; box-shadow: 1px 1px 3px;" onclick="clicar('C')">
-            <a href="grossuraP.html"><img class="img" src="../FixoOuDestacavel/fixoP.png" alt="Fixo." id="Sintetico"></a>
+          <div class="card" style="width: 18rem; margin: auto; box-shadow: 1px 1px 3px;" onclick="clicar('1')">
+            <a href="pagina_finalFP.html"><img class="img" src="../FixoOuDestacavel/fixoP.png" alt="Esmaltado." id="Esmaltado"></a>
             <div class="card-body">
               <p class="card-text">Esmaltado na Cor do Zíper.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="width: 18rem;margin: auto; box-shadow: 1px 1px 3px;">
+            <a href="pagina_finalFP.html  "><img class="img" src="../FixoOuDestacavel/destacavelP.png" alt="Niquelado." id="Niquelado" onclick="clicar('4')"></a>
+            <div class="card-body">
+              <p class="card-text">Niquelado.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <br>  
 
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-md">
           <ul>
             Contato
             <li> <a href="https://wa.me/message/E3EC2Q5RMRU5O1" target="_blank" class="link"><b>Whatsapp</b> <img
@@ -59,7 +70,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm">
+        <div class="col-md">
           <img src="../../background/footer/WhatsApp Image 2021-09-16 at 3.41.24 PM.jpeg" alt="#">
           <img src="../../background/footer/logotipo sancris-.png" alt="Logo Sancris" style="height: 80px;">
           <img src="../../background/footer/WhatsApp Image 2021-09-16 at 3.41.25 PM.jpeg" alt="#">
@@ -68,7 +79,9 @@
     </div>
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 
-</body>
+  </body>
 </html>
