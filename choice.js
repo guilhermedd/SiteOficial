@@ -73,19 +73,22 @@ function final2() {
   const codigo = JSON.parse(localStorage.getItem('codigoFinal'))
   if (codigo[4] == '5') {
     codigo.push('5')
-  } else if (codigo[1] == '4') {
+  } else if (codigo[4] == '4') {
     codigo.push('4')
-  } else if (codigo[1] == '1') {
+  } else if (codigo[4] == '1') {
     codigo.push('1')
-  } else if (codigo[1] == '3') {
+  } else if (codigo[4] == '3') {
     codigo.push('3')
-  } else if (codigo[1] == '6') {
+  } else if (codigo[4] == '6') {
     codigo.push('6')
-  } else if (codigo[1] == '7') {
+  } else if (codigo[4] == '7') {
     codigo.push('7')
-  } else if (codigo[1] == '8') {
+  } else if (codigo[4] == '8') {
     codigo.push('8')
   }
+  codigo[4] = codigo[5];
+  codigo[5] = codigo[6];
+  codigo.pop();
   
   final.innerHTML = codigo.join('');
 }
