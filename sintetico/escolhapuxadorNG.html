@@ -11,67 +11,48 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
-  <link rel="manifest" href="../site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <link href = "fonts/roboto/stylesheet.css" rel = "stylesheet" type = "text/css" />
 
   <title>MS Representações</title>
 </head>
-<body onload="exclude_code_bug(2)">
-  
+<body onload="exclude_code_bug(5)">
+
   <script src="../choice.js"></script>
   <div class="buttonRet">
-    <a href="FixoOuDestacavel.html"><button type="button" class="btn btn-light" onclick="excluir()" style="box-shadow: 1px 1px 3px;">Voltar</button></a>
+    <a href="cursorNG.html"><button type="button" class="btn btn-light" style="box-shadow: 1px 1px 3px;">Voltar</button></a>
   </div>
 
-  <section style="margin: auto;">
-    <div>
-      Escolha o <strong>TIPO</strong> de zíper que você gostaria:
+  <section  style="margin: auto;" >
+    <div style="font-size: 25px;">
+      Você deseja adquirir o <strong>PUXADOR</strong>?
     </div>
   </section>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="d-flex justify-content-center">
-                <div class="card" style="width: 18rem; box-shadow: 1px 1px 3px;" onclick="clicar('S')">
-                  <a href="grossuraN.html"><img class="img" src="../modeloZiper/sintético.png" alt="Normal" id="Normal" onclick="clicar(' ')"></a>
-                  <div class="card-body">
-                    <p class="card-text">Normal</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="d-flex justify-content-center">
-                <div class="card" style="width: 18rem; box-shadow: 1px 1px 3px;" >
-                    <a href="grossuraI.html"><img class="img" src="../modeloZiper/plástico.png" alt="Invisível." id="Invisível" onclick="clicar('I')"></a>
-                  <div class="card-body">
-                    <p class="card-text">Invisível</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-              <div class="d-flex justify-content-center">
-                <div class="card" style="width: 18rem; box-shadow: 1px 1px 3px;">
-                    <a href="grossuraS.html"><img class="img" src="../modeloZiper/Metálico.png" alt="Invertido/ Semi-invisível." id="Invertido/ Semi-invisível" onclick="clicar('R')"></a>
-                    <div class="card-body">
-                      <p class="card-text">Invertido/ Semi-invisível</p>
-                    </div>
-                </div>
-              </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="puxadorNG.html" class="link2">
+        <div class="escolha">
+            SIM
           </div>
-        </div>
+        </a>
       </div>
+        <div class="col">
+          <a href="#" class="link2" onclick="clicar('0')">
+            <div class="escolha">
+              NÃO
+            </div>
+          </a>
+        </div>
     </div>
-  
+  </div>
+
+
   <footer>
     <div class="container">
       <div class="row">

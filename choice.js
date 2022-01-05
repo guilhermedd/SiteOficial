@@ -72,7 +72,7 @@ function final2() {
   const final = document.getElementById('Final')
   const codigo = JSON.parse(localStorage.getItem('codigoFinal'))
   if (codigo[4] == '5') {
-    codigo.push('5')
+    codigo.pop('5')
   } else if (codigo[4] == '4') {
     codigo.push('4')
   } else if (codigo[4] == '1') {
@@ -104,4 +104,28 @@ function colocazero() {
   let codigoFinal = pegarCodigoFinal();
   codigoFinal[3] = 60;
   localStorage.setItem('codigoFinal', JSON.stringify(codigoFinal));
+}
+
+function final3() {
+  const final = document.getElementById('Final')
+  const codigo = JSON.parse(localStorage.getItem('codigoFinal'))
+  let i = 4;
+  if (codigo[4] == '6') i++
+  if (codigo[2] == ' ') {
+    codigo.splice(2,1)
+  // } else if (codigo[i] == '4') {
+  //   codigo.push('4')
+  // } else if (codigo[i] == '1') {
+  //   codigo.push('1')
+  // } else if (codigo[i] == '3') {
+  //   codigo.push('3')
+  // } else if (codigo[i] == '6') {
+  //   codigo.push('6')
+  // } else if (codigo[i] == '7') {
+  //   codigo.push('7')
+  // } else if (codigo[i] == '8') {
+  //   codigo.push('8')
+  }
+  
+  final.innerHTML = codigo.join('');
 }
