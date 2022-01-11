@@ -74,41 +74,48 @@ function final() {
 function final2() {
   const final = document.getElementById('Final')
   const codigo = JSON.parse(localStorage.getItem('codigoFinal'))
-  if (codigo[4] == '5') {
-    codigo.pop('5')
-  } else if (codigo[4] == '4') {
-    codigo.push('4')
-  } else if (codigo[4] == '1') {
-    codigo.push('1')
-  } else if (codigo[4] == '3') {
-    codigo.push('3')
-  } else if (codigo[4] == '6') {
-    codigo.push('6')
-  } else if (codigo[4] == '7') {
-    codigo.push('7')
-  } else if (codigo[4] == '8') {
-    codigo.push('8')
-  }
+  if (codigo[3] == '25K') {
+    codigo[3] = '25' + codigo[4] + 'K'
+    codigo.pop()
+   } else {
+    if (codigo[4] == '5') {
+      codigo.push('5')
+    } else if (codigo[4] == '4') {
+      codigo.push('4')
+    } else if (codigo[4] == '1') {
+      codigo.push('1')
+    } else if (codigo[4] == '3') {
+      codigo.push('3')
+    } else if (codigo[4] == '6') {
+      codigo.push('6')
+    } else if (codigo[4] == '7') {
+      codigo.push('7')
+    } else if (codigo[4] == '8') {
+      codigo.push('8')
+    }
+   }
+
   codigo[4] = codigo[5];
   codigo[5] = codigo[6];
   codigo.pop();
   
-  let codigo_final = separate(codigo,3)
+  //let codigo_final = separate(codigo,3)
 
   
-  final.innerHTML = codigo_final.join('');
+  //final.innerHTML = codigo_final.join('');
+  final.innerHTML = codigo.join('');
 }
 
 
 function tirazero() {
   let codigoFinal = pegarCodigoFinal();
-  codigoFinal[3] = 6;
+  codigoFinal[3] = '6';
   localStorage.setItem('codigoFinal', JSON.stringify(codigoFinal));
 }
 
 function colocazero() {
   let codigoFinal = pegarCodigoFinal();
-  codigoFinal[3] = 60;
+  codigoFinal[3] = '60';
   localStorage.setItem('codigoFinal', JSON.stringify(codigoFinal));
 }
 
