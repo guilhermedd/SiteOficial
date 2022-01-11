@@ -11,50 +11,47 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
-  <link rel="manifest" href="../site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <link href = "fonts/roboto/stylesheet.css" rel = "stylesheet" type = "text/css" />
 
   <title>MS Representações</title>
 </head>
-<body onload="exclude_code_bug(2)">
+<body onload="exclude_code_bug(5)">
 
   <script src="../choice.js"></script>
   <div class="buttonRet">
-    <a href="banho.html"><button type="button" class="btn btn-light" onclick="excluir()" style="box-shadow: 1px 1px 3px;">Voltar</button></a>
+    <a href="cursorNG2.html"><button type="button" class="btn btn-light" style="box-shadow: 1px 1px 3px;">Voltar</button></a>
   </div>
 
   <section  style="margin: auto;" >
     <div style="font-size: 25px;">
-      O zíper será <strong>FIXO</strong> ou <strong>DESTACÁVEL</strong>?
+      Você deseja adquirir o <strong>PUXADOR</strong>?
     </div>
   </section>
 
-  <div class="cards">
-    <div class="container">
-      <div class="row">
-        <div class="col-md">
-          <div class="card" style="width: 18rem; margin: auto; box-shadow: 1px 1px 3px;" onclick="clicar('C')">
-            <a href="grossura.html"><img class="img" src="../FixoOuDestacavel/Fixo" alt="Fixo" id="Sintetico"></a>
-            <div class="card-body">
-              <p class="card-text">Fixo</p>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="puxadorNG2.html" class="link2">
+        <div class="escolha">
+            SIM
           </div>
-        </div>
-        <div class="col-md">
-          <div class="card" style="width: 18rem;margin: auto; box-shadow: 1px 1px 3px;">
-            <a href="grossura.html"><img class="img" src="../FixoOuDestacavel/Destacavel.png" alt="Destacável" id="Metalico" onclick="clicar('O')"></a>
-            <div class="card-body">
-              <p class="card-text">Destacável</p>
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
+        <div class="col">
+          <a href="pagina_final6NG2.html" class="link2" onclick="clicar('0')">
+            <div class="escolha">
+              NÃO
+            </div>
+          </a>
+        </div>
     </div>
   </div>
+
 
   <footer>
     <div class="container">
