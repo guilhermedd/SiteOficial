@@ -89,17 +89,6 @@ function final2() {
 }
 
 
-// function tirazero() {
-//   let codigoFinal = pegarCodigoFinal();
-//   codigoFinal[3] = '6';
-//   localStorage.setItem('codigoFinal', JSON.stringify(codigoFinal));
-// }
-
-// function colocazero() {
-//   let codigoFinal = pegarCodigoFinal();
-//   codigoFinal[3] = '60';
-//   localStorage.setItem('codigoFinal', JSON.stringify(codigoFinal));
-// }
 
 function final3() {
   const final = document.getElementById('Final')
@@ -149,7 +138,7 @@ function final3() {
   
   final.innerHTML = codigo_final.join('');
     }
-  let codigo_final = separate(codigo,4)
+  //let codigo_final = separate(codigo,3)
 
   
   final.innerHTML = codigo_final.join('');
