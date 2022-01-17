@@ -117,7 +117,7 @@ footer {
 
 .buttonRet {
   text-align: left;
-  margin: 10px
+  margin: 10px;
 }
 
 .img3 {
@@ -154,19 +154,26 @@ footer {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   section {
     transform: scale(0.9);
     margin-top: 50px;
   }
+  
   li {
-    font-size: 18px;
+    font-size: 25px;
   }
+
   .img-footer {
     transform: scale(0.5);
   }
+  
   footer {
     max-height: 100px;
+  }
+  
+  .container {
+    transform: scale(0.8);
   }
 
 }
