@@ -165,11 +165,7 @@ footer {
   }
 
   .img-footer {
-    transform: scale(0.5);
-  }
-  
-  footer {
-    max-height: 100px;
+    transform: scale(0.8);
   }
   
   .container {
@@ -177,3 +173,4 @@ footer {
   }
 
 }
+
