@@ -78,11 +78,6 @@ function final2() {
     codigo[3] = '25' + codigo[4] + 'K'
     codigo.pop()
    }  
-   if (codigo[4] != '0') {
-     let aux = codigo[4];
-     codigo[4] = codigo[5];
-     codigo[5] = aux;
-   }
        
   const codigo_final = separate(codigo,3)
   final.innerHTML = codigo_final.join('');
